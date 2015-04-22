@@ -1,0 +1,15 @@
+This is the code for the GDB Exercise 1 from Lab Session 04 (10-04-15). I have modified the original code contained in the folder "buggy", in order to fix the errors and to adapt them to the CMake build system (Challenge 3).
+
+To test try:
+
+ mkdir BUILD && cd BUILD
+ cmake ..
+ make CXXFLAGS="-ggdb --coverage" LDFLAGS="-ggdb --coverage"
+ make install CXXFLAGS="-ggdb --coverage" LDFLAGS="-ggdb --coverage"
+ make test CXXFLAGS="-ggdb --coverage" LDFLAGS="-ggdb --coverage"	
+
+To launch the executable tests, put a number (between 1 and 10) in the command line (e.g.: ./integer-list 1)
+
+
+
+
